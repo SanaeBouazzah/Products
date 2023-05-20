@@ -21,7 +21,7 @@
                           <tr>
                             <td>{{$product->name}}</td>
                             <td>{{$product->category->name}}</td>
-                            <td>${{$product->price}}</td>
+                            <td>${{number_format($product->price / 100, 2)}}</td>
                           </tr>
                       @endforeach
                     </tbody>
